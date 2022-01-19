@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-realpg-dev-184226-authRole",
+      "UnauthRoleArn": "arn:aws:iam::418791858139:role/amplify-realpg-dev-184226-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::418791858139:role/amplify-realpg-dev-184226-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-realpg-dev-184226-deployment",
+      "UnauthRoleName": "amplify-realpg-dev-184226-unauthRole",
+      "StackName": "amplify-realpg-dev-184226",
+      "StackId": "arn:aws:cloudformation:ap-south-1:418791858139:stack/amplify-realpg-dev-184226/cb98d3a0-7604-11ec-af3f-0a63d31bbcec",
+      "AmplifyAppId": "dqde6lt7lbms9"
+    },
+    "categories": {
+      "auth": {
+        "realpg6037e130": {},
+        "true": {}
+      }
+    }
+  }
+}

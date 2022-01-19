@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "realpg",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authrealpg6037e130",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

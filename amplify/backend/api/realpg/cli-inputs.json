@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "realpg",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\g1ama\\Desktop\\Dev\\realpg\\amplify\\backend\\api\\realpg\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-01-18T04:34:24.686Z",
+      "keyDescription": "public"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authrealpg6037e130"
+      }
+    ],
+    "conflictResolution": {}
+  }
+}

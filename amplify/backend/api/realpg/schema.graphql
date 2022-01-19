@@ -1,0 +1,26 @@
+type Post @model 
+@auth(rules: [
+    { allow: owner, ownerField: "username" },
+    { allow: public, operations: [read] }
+  ]){
+  id: ID!
+  title: String! 
+  content: String!
+  like: Int
+  coverImage: String
+  username: String @index(name:"postByUsername",queryField: "postsByUsername")
+  comments: [Comment] @hasMany(indexName: "commentsByPostId", fields: ["id"])
+  createdAt: AWSDateTime
+}
+
+
+type Comment @model
+  @auth(rules: [
+    { allow: owner, ownerField: "username" },
+    { allow: public, operations: [read] }
+  ]) {
+  id: ID!
+  postId: ID! @index(name: "commentsByPostId", queryField: "commentsByPostId")
+  message: String!
+  username: String
+}
